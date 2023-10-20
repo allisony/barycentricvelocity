@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/barycentricvelocity.egg-info/PKG-INFO
+src/barycentricvelocity.egg-info/SOURCES.txt
+src/barycentricvelocity.egg-info/dependency_links.txt
+src/barycentricvelocity.egg-info/top_level.txt

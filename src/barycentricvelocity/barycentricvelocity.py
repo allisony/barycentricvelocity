@@ -12,6 +12,7 @@ def main(skycoord_object, step_size_days=1, year=2023, site="apo"):
     location = initialize_location(site)
 
     vel_array = np.zeros(len(time_array))
+    t_plot_date_array = np.zeros(len(time_array))
 
     for j, time in enumerate(time_array):
 
@@ -22,9 +23,10 @@ def main(skycoord_object, step_size_days=1, year=2023, site="apo"):
         sc_cartesian = skycoord_object.icrs.represent_as(UnitSphericalRepresentation).represent_as(CartesianRepresentation)
         vel_output = sc_cartesian.dot(velocity).to(u.km/u.s)
 
-        vel_array[j] = vel_output
+        vel_array[j] = vel_output.value
+        t_plot_date_array[j] = t_obj.plot_date
 
-    return time_array, vel_array
+    return time_array, t_plot_date_array, vel_array
 
 
 def initialize_time_array(step_size_days = 1, year=2023): # the year doesn't matter!

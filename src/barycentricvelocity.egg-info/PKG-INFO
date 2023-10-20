@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: barycentricvelocity
+Version: 0.0.1
+Summary: Calculating Earth's Velocity
+Home-page: https://github.com/allisony/barycentricvelocity
+Author: Allison Youngblood
+Author-email: allison.a.youngblood@nasa.gov
+Project-URL: Bug Tracker, https://github.com/allisony/barycentricvelocity/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# barycentricvelocity
+ A wrapper for computing Earth's velocity when looking toward different sightlines throughout the year
